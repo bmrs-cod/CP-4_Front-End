@@ -2,6 +2,8 @@
 
 Projeto desenvolvido para a CP de Front-end Design.
 
+Aluno: Bruno Marcelo Real e Silva - RM:569785
+
 ## Sobre o projeto
 
 A EcoTrend é uma loja virtual ficticia focada na venda de produtos sustentaveis.
