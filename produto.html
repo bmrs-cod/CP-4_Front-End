@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Produto - EcoTrend</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+
+    <div class="container">
+
+      <a class="navbar-brand fw-bold" href="index.html">
+        EcoTrend 🌱
+      </a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#menu">
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="menu">
+
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Início
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="categorias.html">
+              Produtos
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">
+              Contato
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <main class="container my-5">
+
+    <div class="row g-5">
+
+      <div class="col-md-6">
+
+        <img id="produto-imagem"
+             src=""
+             class="img-fluid rounded"
+             alt="">
+
+      </div>
+
+
+      <div class="col-md-6">
+
+        <h1 id="produto-nome"></h1>
+
+        <p class="fs-3 fw-bold text-success" id="produto-preco"></p>
+
+
+        <p id="produto-descricao"></p>
+
+
+        <h2 class="fs-4">
+          Informações do produto
+        </h2>
+
+        <ul id="produto-info"></ul>
+
+
+        <button class="btn btn-success btn-lg">
+          Adicionar ao carrinho
+        </button>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <footer>
+
+    <h3>EcoTrend 🌱</h3>
+
+    <p>
+      Produtos sustentáveis para escolhas mais conscientes.
+    </p>
+
+    <small>
+      © 2026 EcoTrend
+    </small>
+
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const produtos = {
+      1: {
+        nome: "Camiseta Sustentável",
+        preco: "R$ 79,90",
+        imagem: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+        descricao: "Uma camiseta desenvolvida pensando em escolhas mais conscientes e sustentáveis.",
+        info: ["Material sustentável", "Produto reutilizável", "Produção consciente", "Disponível em diferentes tamanhos"]
+      },
+      2: {
+        nome: "Garrafa Reutilizável",
+        preco: "R$ 49,90",
+        imagem: "https://images.unsplash.com/photo-1602143407151-7111542de6e8",
+        descricao: "Uma alternativa prática para reduzir o uso de copos e garrafas descartáveis.",
+        info: ["Material livre de BPA", "Reutilizável", "Fácil de higienizar", "Design compacto"]
+      },
+      3: {
+        nome: "Ecobag",
+        preco: "R$ 29,90",
+        imagem: "https://plus.unsplash.com/premium_photo-1681233752347-c52c7815eb63?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        descricao: "Prática, reutilizável e ideal para substituir as sacolas plásticas no dia a dia.",
+        info: ["Tecido resistente", "Dobrável", "Lavável", "Reduz o uso de plástico"]
+      },
+      4: {
+        nome: "Kit Sustentável",
+        preco: "R$ 99,90",
+        imagem: "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85",
+        descricao: "Um kit completo com itens essenciais para um estilo de vida mais consciente.",
+        info: ["Vários itens inclusos", "Materiais sustentáveis", "Ótimo custo-benefício"]
+      }
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id") || 1;
+    const produto = produtos[id];
+
+    if (produto) {
+      document.getElementById("produto-imagem").src = produto.imagem;
+      document.getElementById("produto-imagem").alt = produto.nome;
+      document.getElementById("produto-nome").textContent = produto.nome;
+      document.getElementById("produto-preco").textContent = produto.preco;
+      document.getElementById("produto-descricao").textContent = produto.descricao;
+
+      const lista = document.getElementById("produto-info");
+      produto.info.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        lista.appendChild(li);
+      });
+    }
+  </script>
+
+</body>
+</html>

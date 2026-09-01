@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>EcoTrend</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+
+      <a class="navbar-brand fw-bold" href="index.html">
+        EcoTrend 🌱
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Início</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="categorias.html">Produtos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">🛒 Carrinho</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+
+
+  <main>
+
+    <section class="container mt-4">
+
+      <div id="carouselEco" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09"
+                 class="d-block w-100 banner"
+                 alt="Produtos sustentáveis">
+
+            <div class="carousel-caption">
+              <h1>Consuma de forma consciente</h1>
+              <p>Produtos sustentáveis para um futuro melhor.</p>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e"
+                 class="d-block w-100 banner"
+                 alt="Natureza">
+
+            <div class="carousel-caption">
+              <h2>Escolhas que fazem diferença</h2>
+              <p>Pequenas atitudes podem transformar o futuro.</p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselEco"
+                data-bs-slide="prev">
+
+          <span class="carousel-control-prev-icon"></span>
+
+        </button>
+
+
+        <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselEco"
+                data-bs-slide="next">
+
+          <span class="carousel-control-next-icon"></span>
+
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <section class="container my-5">
+
+      <h2 class="text-center mb-4">Categorias</h2>
+
+      <div class="row g-4 text-center">
+
+        <div class="col-md-4">
+          <div class="categoria">
+
+            <h3>🌿 Casa</h3>
+
+            <p>
+              Produtos sustentáveis para o dia a dia.
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="categoria">
+
+            <h3>👕 Moda</h3>
+
+            <p>
+              Escolhas conscientes para você.
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="categoria">
+
+            <h3>♻️ Reutilizáveis</h3>
+
+            <p>
+              Produtos para reduzir desperdícios.
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="container my-5">
+
+      <h2 class="text-center mb-4">Produtos em destaque</h2>
+
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+
+          <div class="card h-100">
+
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+                 class="card-img-top"
+                 alt="Camiseta sustentável">
+
+            <div class="card-body">
+
+              <h3 class="card-title fs-5">
+                Camiseta Sustentável
+              </h3>
+
+              <p class="card-text">
+                Produzida com materiais mais conscientes.
+              </p>
+
+              <p class="fw-bold">
+                R$ 79,90
+              </p>
+
+              <a href="produto.html?id=1" class="btn btn-success">
+                Ver produto
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+          <div class="card h-100">
+
+            <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8"
+                 class="card-img-top"
+                 alt="Garrafa reutilizável">
+
+            <div class="card-body">
+
+              <h3 class="card-title fs-5">
+                Garrafa Reutilizável
+              </h3>
+
+              <p class="card-text">
+                Uma alternativa para reduzir copos descartáveis.
+              </p>
+
+              <p class="fw-bold">
+                R$ 49,90
+              </p>
+
+              <a href="produto.html?id=2" class="btn btn-success">
+                Ver produto
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+          <div class="card h-100">
+
+            <img src="https://plus.unsplash.com/premium_photo-1681233752347-c52c7815eb63?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                 class="card-img-top"
+                 alt="Ecobag">
+
+            <div class="card-body">
+
+              <h3 class="card-title fs-5">
+                Ecobag
+              </h3>
+
+              <p class="card-text">
+                Prática, reutilizável e ideal para o dia a dia.
+              </p>
+
+              <p class="fw-bold">
+                R$ 29,90
+              </p>
+
+              <a href="produto.html?id=3" class="btn btn-success">
+                Ver produto
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <h3>EcoTrend 🌱</h3>
+
+    <p>
+      Produtos sustentáveis para escolhas mais conscientes.
+    </p>
+
+    <p>
+      Instagram | Facebook | ecotrend@email.com
+    </p>
+
+    <small>
+      © 2026 EcoTrend
+    </small>
+
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
